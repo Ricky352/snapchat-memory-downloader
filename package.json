@@ -1,12 +1,23 @@
 {
   "name": "snapchat-memory-downloader",
-  "module": "index.ts",
+  "module": "src/index.ts",
   "type": "module",
   "private": true,
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "prettier": "^3.7.4"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.19"
+  },
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "start:fresh": "rm -rf snapchat_memories/ errors.txt && bun run src/index.ts",
+    "check": "bun x tsc -p tsconfig.json",
+    "prettier": "prettier . --write",
+    "prettier:check": "prettier . --check"
   }
 }

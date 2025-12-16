@@ -32,3 +32,10 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 # Finder (MacOS) folder config
 .DS_Store
+
+# Snapchat Memory JSON
+memories_history.json
+
+# Generated downloads
+snapchat_memories/
+errors.txt
